@@ -33,6 +33,7 @@ void init() {
     }
     pinMode(36, INPUT);
     initFromFile();
+    Serial.println("sci-calc init!");
 }
 
 
@@ -48,7 +49,7 @@ void setup() {
     currentElement -> activate();
 }
 
-void loop() { 
+void loop() {
     animateAll();
     u8g2.clearBuffer();
     kb.update();
